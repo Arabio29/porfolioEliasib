@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!--logo.ico-->
+    <link rel="icon" type="image/x-icon" href="img/logi.ico">
+    
+    <!-- email script start-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('MFXCLrdcnIKWCEonD')
+    </script>
+     <!-- email script endt-->
+
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Eli</span>asib</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#portfolio" class="nav-item nav-link">Projects</a>                
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Servicios</a>
+                <a href="#about" class="nav-item nav-link">About me</a> 
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="https://wa.link/63d6a5" class="btn btn-outline-primary d-none d-lg-block" target="_blank">Hire me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    
+    
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/1.png" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Eliasib Cantor</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, App Designer, App Developer, I like cats :)</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="https://drive.google.com/file/d/1C3hIOLvFWLgLIc0SUfyaw2Zzv9WaTp3m/view" class="btn btn-outline-light mr-5" target="_blank">Download CV</a>
+                        
+                        <a id="logo-github" href="https://github.com/Arabio29" target="_blank">
+                            <i class="fa-brands fa-github fa-beat-fade fa-2xl" style="color: #ffffff;">
+                            </i>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio" ;>
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">my projects</h1>
+            </div>
+            </div>
+
+            <div class="row portfolio-container" style="width: 80%; margin: 0 auto">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+
+                        <!--image + enlace + zoom + h2-->
+                        <img class="img-fluid rounded w-100" src="img/3.webp"
+                        
+                        onclick="window.open('https://www.alpicool.com.co/', '_blank');"
+
+                        alt="Ecommerce con WordPresss"
+
+                         onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
+                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
+
+                         <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Ecommerce - WordPresss</h2>                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                                                <!--image + enlace + zoom + h2-->
+                        <img class="img-fluid rounded w-100" src="img/4.webp"
+                        
+                        onclick="window.open('https://votoestudiantil.co/', '_blank');"
+
+                        alt="Ecommerce con WordPresss"
+
+                         onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
+                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
+
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Web PHP</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                                                <!--image + enlace + zoom + h2-->
+                        <img class="img-fluid rounded w-100" src="img/6.webp"
+                        
+                        onclick="window.open('https://wireed.online/', '_blank');"
+
+                        alt="Ecommerce con WordPresss"
+
+                         onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
+                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
+
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">News website</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                                                <!--image + enlace + zoom + h2-->
+                        <img class="img-fluid rounded w-100" src="img/8.webp"
+                        
+                        onclick="window.open('https://login-react-tailwind-express.vercel.app/', '_blank');"
+
+                        alt="Ecommerce con WordPresss"
+
+                         onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
+                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
+
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Login - react & Tailwind</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                                                <!--image + enlace + zoom + h2-->
+                        <img class="img-fluid rounded w-100" src="img/5.webp"
+                        
+                        onclick="window.open('https://exquisite-syrniki-56d9d7.netlify.app/', '_blank');"
+
+                        alt="Ecommerce con WordPresss"
+
+                         onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
+                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
+
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Task list JavaScript</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                                                <!--image + enlace + zoom + h2-->
+                        <img class="img-fluid rounded w-100" src="img/7.webp"
+                        
+                        onclick="window.open('https://unrivaled-biscochitos-db131b.netlify.app/', '_blank');"
+
+                        alt="Ecommerce con WordPresss"
+
+                         onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
+                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
+
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Web HTML & CSS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Portfolio End -->
+
+
+        <!-- Skill Start -->
+        <div class="container-fluid py-5" id="skill">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                    <h1 class="position-absolute text-uppercase text-primary">My skills</h1>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">HTML</h6>
+                                <h6 class="font-weight-bold">95%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">CSS</h6>
+                                <h6 class="font-weight-bold">85%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">PHP</h6>
+                                <h6 class="font-weight-bold">90%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Javascript</h6>
+                                <h6 class="font-weight-bold">90%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">React JS</h6>
+                                <h6 class="font-weight-bold">95%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Wordpress</h6>
+                                <h6 class="font-weight-bold">85%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skill End -->
+
+
+        <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">my services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>Crafting impactful and functional visual experiences for attractive and effective websites.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Development</h4>
+                    </div>
+                    <p>Building dynamic and efficient websites with modern technologies for interactive user experiences.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">App Design</h4>
+                    </div>
+                    <p>Creating appealing and ergonomic mobile applications that excel in usability and aesthetics.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">iOS App Development</h4>
+                    </div>
+                    <p>Crafting cross-platform iOS applications using the Ionic development framework.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>Optimizing for search engines to enhance website visibility and organic traffic.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creation</h4>
+                    </div>
+                    <p>Generating valuable and engaging content that resonates with the audience and promotes the brand.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Software Developer and UX / UI Designer</h3>
+                    <p>Passionate about programming and graphic design. I transform ideas into impressive technological and visual solutions. With more than 2 years of experience delivering high quality results. Ready to take your ideas to the next level.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Eliasib Cantor</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">ecantor.2906@gmail.com</span></h6></div>
+                        
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">29 june</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Cell phone number: <span class="text-secondary">+57 3219591377</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Cúcuta, Colombia</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">2 years</span></h6></div>
+                       
+                    </div>
+                    <a href="https://wa.link/63d6a5" class="btn btn-outline-primary mr-4" target="_blank">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+
+
+    
+
+
+    
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">contact me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        
+                        <form class="needs-validation" name="sentMessage" id="form" >
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    
+                                    <input type="text" class="form-control p-4" id="from_name" placeholder="Name"
+                                        required="required" data-validation-required-message="Please enter your name" name="from_name"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+
+                                    <input type="email" class="form-control p-4" id="email_id" placeholder="Email"
+                                        required="required" data-validation-required-message="Please enter your email" name="email_id"/>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+
+
+                                <input type="text" class="form-control p-4" id="reply_to" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger" name="reply_to"></p>
+                            </div>
+
+
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message" name="message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+
+                                <button class="btn btn-outline-primary" type="submit" id="button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/Arabio29" target="_blank"><i class="fa-brands fa-github fa-beat-fade fa-2xl"></i></a>
+
+                <a class="btn btn-light btn-social mr-2" href="mailto:ecantor.2906@gmail.com"><i class="fa-regular fa-envelope" style="color: #121212;"></i></i></a>
+
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/eliasib-cantor-805457231/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                <a class="btn btn-light btn-social" href="https://www.youtube.com/channel/UCC5asuPW7WK7a8XaNYcxrpg" target="_blank"><i class="fa-brands fa-youtube" style="color: #212121;"></i></a>
+            </div>
+            
+           
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
