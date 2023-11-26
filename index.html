@@ -41,7 +41,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body data-spy="scroll" data-target=".navbar" data-offset="51" class="">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
@@ -119,40 +119,54 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
                 <h1 class="position-absolute text-uppercase text-primary">my projects</h1>
             </div>
-            </div>
-
+            
             <div class="row portfolio-container" style="width: 80%; margin: 0 auto">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
 
-                        <!--image + enlace + zoom + h2-->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third"
+                onclick="window.open('https://fir-app-59269.web.app/', '_blank');">
+                    <div class="position-relative overflow-hidden mb-2">
+                                                <!--image + enlace + zoom + h2-->
+                        <img class="img-fluid rounded w-100" src="img/login.jpg"
+                        alt="Ecommerce con WordPresss"
+
+                        onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
+                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
+
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(255, 255, 255); color: rgb(11, 206, 175);">Login Firebase</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" onclick="window.open('http://www.alpicool.com.co/', '_blank');">
+                    <div class="position-relative overflow-hidden mb-2">
+                                                <!--image + enlace + zoom + h2-->
                         <img class="img-fluid rounded w-100" src="img/3.webp"
-                        
-                        onclick="window.open('https://www.alpicool.com.co/', '_blank');"
 
                         alt="Ecommerce con WordPresss"
 
                          onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
                         onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
 
-                         <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Ecommerce - WordPresss</h2>                       
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(255, 255, 255); color: rgb(11, 206, 175);">Ecommerce site</h2>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                                                 <!--image + enlace + zoom + h2-->
-                        <img class="img-fluid rounded w-100" src="img/4.webp"
+                        <img class="img-fluid rounded w-100" src="img/princesasSite.png"
                         
-                        onclick="window.open('https://votoestudiantil.co/', '_blank');"
+                        onclick="window.open('https://fundacionprincesasguerreras.com/', '_blank');"
 
                         alt="Ecommerce con WordPresss"
 
                          onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
                         onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
 
-                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Web PHP</h2>
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(255, 255, 255); color: rgb(11, 206, 175);">Landing Bootstrap</h2>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                                                 <!--image + enlace + zoom + h2-->
@@ -165,7 +179,7 @@
                          onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
                         onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
 
-                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">News website</h2>
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(255, 255, 255); color: rgb(11, 206, 175);">News website</h2>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
@@ -180,7 +194,7 @@
                          onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
                         onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
 
-                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Login - react & Tailwind</h2>
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(255, 255, 255); color: rgb(11, 206, 175); padding: 2px 0;">React & Tailwind</h2>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
@@ -195,24 +209,12 @@
                          onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
                         onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
 
-                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Task list JavaScript</h2>
+                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(255, 255, 255); color: rgb(11, 206, 175);">Task JavaScript</h2>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                                                <!--image + enlace + zoom + h2-->
-                        <img class="img-fluid rounded w-100" src="img/7.webp"
-                        
-                        onclick="window.open('https://unrivaled-biscochitos-db131b.netlify.app/', '_blank');"
+                  
 
-                        alt="Ecommerce con WordPresss"
 
-                         onmouseover="this.style.transform = 'scale(1.1)'; this.style.transition = 'transform 0.3s ease-in-out';" 
-                        onmouseout="this.style.transform = 'scale(1)'; this.style.transition = 'transform 0.3s ease-in-out';">
-
-                        <h2 style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgb(11, 206, 175); color: white; padding: 2px 0;">Web HTML & CSS</h2>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
